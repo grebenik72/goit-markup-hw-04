@@ -7,6 +7,7 @@
     --fotter-text-color:#E7E9FC;
     --footter-logo-color:#F4F4FD;
     --icon-color:#8e8f99;
+    --icon-color-footer:#31D0AA;
  }   
 
 .list {
@@ -35,10 +36,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;
-    
-    /* border: 1px solid tomato; */
-    
+    padding-right: 15px; 
 }
 
 /*==============header============= */
@@ -172,7 +170,6 @@ body {
 .customer {
     display: flex;
     flex-direction: row;
-    /* align-items: flex-start; */
     padding: 0px;
     gap: 24px;
 }
@@ -370,9 +367,13 @@ background-color: var(--accent-color);
 .projects-card-item {
     width: calc((100% - 48px) / 3);
 }
-.projects-card-item:hover,
-.projects-card-item:focus,
-.projects-card-item:active {
+.card-link {
+    display: block;
+}
+
+.card-link:hover,
+.card-link:focus,
+.card-link:active {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -402,6 +403,7 @@ background-color: var(--accent-color);
 }
 
 .card-soc-list {
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -466,5 +468,10 @@ background: rgba(255, 255, 255, 0.1);
 
 .footer-soc-color:hover,
 .footer-soc-color:focus {
-background: #31D0AA;
+background: var(--icon-color-footer);
 }
+.card-soc-list-footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;}
